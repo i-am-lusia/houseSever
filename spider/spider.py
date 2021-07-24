@@ -35,8 +35,8 @@ class Spider():
             cursor.execute(sql)
             results = cursor.fetchall()
             for row in results:
-                provice = row[5]
-                city = row[6]
+                provice = row[3]
+                city = row[4]
                 self.cityList.append({'provice': provice, 'city': city})
         except:
             print("Error: unable dataBase")
